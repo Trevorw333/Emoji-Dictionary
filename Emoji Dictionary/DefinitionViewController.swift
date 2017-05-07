@@ -26,7 +26,18 @@ class DefinitionViewController: UIViewController {
         if emoji == "🐶" {
             definitionLabel.text = "This is a pupper. A pupper is a smol Doggo"
         }
-        
+        if emoji == "😎" {
+            definitionLabel.text = "Cool guy wearing sunglasses"
+        }
+        if emoji == "😆" {
+            definitionLabel.text = "squinty eyes smiling"
+        }
+        if emoji == "🤗" {
+            definitionLabel.text = "Happy face with hugging hands"
+        }
+        if emoji == "🙃" {
+            definitionLabel.text = "Upside down smiley face"
+        }
     }
 
     override func didReceiveMemoryWarning() {
