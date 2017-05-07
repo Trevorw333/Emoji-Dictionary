@@ -68,18 +68,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf0-aX-sLe">
+                                <rect key="frame" x="122.5" y="434" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduced: 2012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZx-76-EjI">
+                                <rect key="frame" x="122.5" y="475" width="130" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="2Da-Ra-3YD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="BdU-9s-ECv"/>
+                                    <constraint firstAttribute="width" constant="150" id="dW9-va-FD2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Da-Ra-3YD"/>
+                                        <exclude reference="dW9-va-FD2"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AZx-76-EjI" firstAttribute="top" secondItem="rf0-aX-sLe" secondAttribute="bottom" constant="20" id="7cJ-hA-Oj6"/>
+                            <constraint firstItem="AZx-76-EjI" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="826-LW-Bnc"/>
                             <constraint firstItem="jlh-vP-9TG" firstAttribute="top" secondItem="y20-T3-KVQ" secondAttribute="bottom" constant="40" id="DCM-Ib-H1n"/>
                             <constraint firstItem="jlh-vP-9TG" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="Phu-6B-Xac"/>
                             <constraint firstItem="v2b-Lb-KK0" firstAttribute="top" secondItem="jlh-vP-9TG" secondAttribute="bottom" constant="50" id="TlI-8R-eT3"/>
                             <constraint firstItem="v2b-Lb-KK0" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="ViY-rE-ga8"/>
+                            <constraint firstItem="AZx-76-EjI" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="bDT-q4-Xck"/>
+                            <constraint firstItem="AZx-76-EjI" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="buI-iZ-S8T"/>
+                            <constraint firstItem="rf0-aX-sLe" firstAttribute="top" secondItem="v2b-Lb-KK0" secondAttribute="bottom" constant="20" id="cUy-Yf-B2y"/>
+                            <constraint firstItem="v2b-Lb-KK0" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="oKl-Sp-gir"/>
+                            <constraint firstItem="rf0-aX-sLe" firstAttribute="centerX" secondItem="0JR-nM-3mh" secondAttribute="centerX" id="pU4-Si-BIh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="rf0-aX-sLe" id="8aS-eU-rfJ"/>
                         <outlet property="definitionLabel" destination="v2b-Lb-KK0" id="iEb-T5-u1e"/>
                         <outlet property="emojiLabel" destination="jlh-vP-9TG" id="HCx-fx-10k"/>
+                        <outlet property="introLabel" destination="AZx-76-EjI" id="PNP-0z-Jq9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRT-9u-oE7" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6921ABFE1EBE9C6F002A6E9C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921ABFD1EBE9C6F002A6E9C /* DefinitionViewController.swift */; };
+		6921F7451EBFBD1A0064AF9E /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921F7441EBFBD1A0064AF9E /* Emoji.swift */; };
 		69E7E91F1EBE6EEE009D8435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7E91E1EBE6EEE009D8435 /* AppDelegate.swift */; };
 		69E7E9211EBE6EEE009D8435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7E9201EBE6EEE009D8435 /* ViewController.swift */; };
 		69E7E9241EBE6EEE009D8435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E7E9221EBE6EEE009D8435 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		6921ABFD1EBE9C6F002A6E9C /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		6921F7441EBFBD1A0064AF9E /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		69E7E91B1EBE6EEE009D8435 /* Emoji Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E7E91E1EBE6EEE009D8435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E7E9201EBE6EEE009D8435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				69E7E91E1EBE6EEE009D8435 /* AppDelegate.swift */,
 				69E7E9201EBE6EEE009D8435 /* ViewController.swift */,
 				6921ABFD1EBE9C6F002A6E9C /* DefinitionViewController.swift */,
+				6921F7441EBFBD1A0064AF9E /* Emoji.swift */,
 				69E7E9221EBE6EEE009D8435 /* Main.storyboard */,
 				69E7E9251EBE6EEE009D8435 /* Assets.xcassets */,
 				69E7E9271EBE6EEE009D8435 /* LaunchScreen.storyboard */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					69E7E91A1EBE6EEE009D8435 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GUH47Z8BFP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,6 +145,7 @@
 			files = (
 				69E7E9211EBE6EEE009D8435 /* ViewController.swift in Sources */,
 				6921ABFE1EBE9C6F002A6E9C /* DefinitionViewController.swift in Sources */,
+				6921F7451EBFBD1A0064AF9E /* Emoji.swift in Sources */,
 				69E7E91F1EBE6EEE009D8435 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +271,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GUH47Z8BFP;
 				INFOPLIST_FILE = "Emoji Dictionary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trevorwelch.Emoji-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,7 +285,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GUH47Z8BFP;
 				INFOPLIST_FILE = "Emoji Dictionary/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trevorwelch.Emoji-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
